@@ -1,3 +1,8 @@
+@layer defaults, layout, components, theme;
+
+
+@layer defaults{
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -347,16 +352,89 @@
   [hidden] {
     display: none;
   }
+  html{
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion) {
+    html{
+      scroll-behavior: auto;
+    }
+  }
+  
+  
+}
+
+@layer layout{
+body{
+  --wrapper-width: 81.25em;
+}
   
 
+.header{
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.header-wrapper{
+  padding: 3rem 0;
+  max-width: var(--wrapper-width);
+  margin-inline:auto;
+}
+
+.logo{
+  text-align: center;
+  padding:0.5rem;
+}
+
+  .content{
+      padding: 3rem 1rem;
+  }
+
+  .content-wrapper{
+    max-width: var(--wrapper-width);
+    margin-inline:auto;
+  }
+
+  .footer{
+    padding: 0 1rem;
+  }
+
+  .footer-wrapper{
+    max-width: var(--wrapper-width);
+    
+    margin-inline:auto;
+  }
+}
+
+@layer components{
+  .navmain{
+      display: flex;
+      flex-flow: row wrap;
+      gap:1rem;
+      justify-content: center;
+  }
+
+  .navmain a{
+    padding: 1rem;
+  }
+}
+
+@layer theme{
 
 
-h1,h2,h3,h4,h5{
+
+  h1,h2,h3,h4,h5{
     font-family: 'Libre Baskerville', serif;
     font-weight: 700;
+  }
+
+  body{
+      font-family: 'Source Sans', sans-serif;
+      font-weight: 400;
+      
+  }
+
+  p{}
 }
 
-body{
-    font-family: 'Source Sans', sans-serif;
-    font-weight: 400;
-}
