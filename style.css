@@ -382,6 +382,15 @@ body{
   margin-inline:auto;
 }
 
+@media (min-width: 37.5em){
+    .header-wrapper{
+      display:flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+}
+
 .logo{
   text-align: center;
   padding:0.5rem;
@@ -422,11 +431,10 @@ body{
 
 @layer theme{
 
-
-
   h1,h2,h3,h4,h5{
     font-family: 'Libre Baskerville', serif;
     font-weight: 700;
+    margin: 0 0 0.5em 0;
   }
 
   body{
@@ -435,6 +443,9 @@ body{
       
   }
 
-  p{}
+  p{
+    margin: 0 0 1.5em 0;
+  }
+
 }
 
