@@ -1,4 +1,4 @@
-@layer defaults, layout, components, theme;
+@layer defaults, layout, components, theme, overrule;
 
 
 @layer defaults{
@@ -447,5 +447,39 @@ body{
     margin: 0 0 1.5em 0;
   }
 
+}
+
+
+@layer overrule{
+  .sk-meetup-event{
+    --color-btn-bg: #a08854;
+    --color-btn-text: #fff;
+  }
+
+
+
+  .grid-item-meetup-event{
+    display: none !important;
+  }
+
+  .grid-item-meetup-event:nth-child(-n+6) {
+      display: block !important;
+  }
+
+  .event-single-item{
+    background: #e3e3e3 !important;
+  }
+
+
+  .sk_branding a{
+    display: none;
+  }
+
+
+
+  .event-btn{
+    background-color: var(--color-btn-bg) !important;
+    border-color: var(--color-btn-bg) !important;
+  }
 }
 
