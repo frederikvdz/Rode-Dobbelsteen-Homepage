@@ -457,13 +457,8 @@ body{
   }
 
 
-
-  .grid-item-meetup-event{
+  .sk-meetup-event .grid-item-meetup-event:nth-child(n + 7){
     display: none !important;
-  }
-
-  .grid-item-meetup-event:nth-child(-n+6) {
-      display: block !important;
   }
 
   .event-single-item{
