@@ -373,7 +373,7 @@ body{
 
 .header{
   text-align: center;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .header-wrapper{
@@ -396,8 +396,13 @@ body{
   padding:0.5rem;
 }
 
+
+.logo > img{
+  max-width: 100%;
+}
+
   .content{
-      padding: 3rem 1rem;
+      padding: 3rem 2rem;
   }
 
   .content-wrapper{
@@ -406,7 +411,7 @@ body{
   }
 
   .footer{
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 
   .footer-wrapper{
@@ -445,6 +450,11 @@ body{
 
   p{
     margin: 0 0 1.5em 0;
+  }
+
+  .photo{
+    border-radius: 15px;
+    overflow: hidden;
   }
 
 }
