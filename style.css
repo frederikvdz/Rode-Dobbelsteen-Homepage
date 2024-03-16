@@ -455,6 +455,7 @@ body{
   .photo{
     border-radius: 15px;
     overflow: hidden;
+    max-width: 100%;
   }
 
 }
