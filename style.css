@@ -772,6 +772,8 @@ body{
     --color-btn-text: #fff;
     background-color: var(--color-bg) !important;
     padding: 1rem;
+    border: 2px solid var(--color-prim);
+    border-radius: 8px !important;
   }
 
   .grid-content{
@@ -807,7 +809,7 @@ body{
 }
 
 .month{
-  background-color: var(--color-acc3) !important;
+  background-color: var(--color-prim) !important;
 }
 
 .sk_meetup_event_tab_option[style~="119"],
