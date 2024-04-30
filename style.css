@@ -479,9 +479,9 @@ body{
   :root {
     --color-prim: #E72929;
     --color-sec:#39302E;
-    --color-bg:#FFFDD7;
+    --color-bg:#fef9ef;
     --color-acc1: #FFE4CF;
-    --color-acc2:#FFFDD7;
+    --color-acc2:#fef9ef;
     --color-acc3:#FF5BAE;
 
   }
